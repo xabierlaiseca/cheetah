@@ -5,12 +5,13 @@ import play.Project._
 object ApplicationBuild extends Build {
 
   val appName         = "cheetah"
-  val appVersion      = "1.0-SNAPSHOT"
+  val appVersion      = "0.1-SNAPSHOT"
 
   val appDependencies = Seq(
-    // Add your project dependencies here,
     jdbc,
-    anorm
+    anorm,
+    "mysql" % "mysql-connector-java" % "5.1.25"
+    
   )
 
 
